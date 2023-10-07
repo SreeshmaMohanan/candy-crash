@@ -1,13 +1,67 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
+.app{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/920/210/451/video-game-candy-crush-soda-saga-wallpaper-preview.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.nav{
+  background-color: #030f13;
+
+}
+.sign{
+  margin-left: 1200px;
+}
+.main{
+  background-image: linear-gradient(to top right,rgb(241, 73, 101),rgb(248, 214, 214));
+  border: 5px  ;
+  border-radius: 20px;  
+  
+}
+.containe img{
+  width:70px;
+  height: 70px;
+  padding: 5px;
+  border: 1px transparent white;
+  cursor: pointer;
+ 
+}
+.containe img:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.score-board{
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+}
+@media only screen and (max-width:300px) {
+  .containe img{
+    width:25px;
+    height: 25px;
+   image-orientation: flip;
+    border: 1px transparent white;
+    cursor: pointer;
+   
+  }
+  .main{
+    background-image: linear-gradient(to top right,rgb(196, 4, 196),rgb(253, 74, 103));
+    border: 5px solid black; 
+    width: 100%;
+    height: 70vh; 
+    
+  }
+  .containe img:hover{
+    transform: scale(1.5);
+  }.sign{
+    margin-left: 300px;
+  }
 }
